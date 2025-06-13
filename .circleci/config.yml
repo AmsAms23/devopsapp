@@ -48,8 +48,9 @@ jobs:
           name: Build and push Docker images
           command: |
             # Build with commit SHA tag (uses direct build commands)
-            docker build -t hilltopconsultancy/devops-hilltop:latest .
-            docker push hilltopconsultancy/devops-hilltop:latest
+            docker build -t amsettu/devops-hilltop:latest .
+            docker push amsettu/devops-hilltop:latest
+
 
   deploy-staging:
     executor: aws-executor
